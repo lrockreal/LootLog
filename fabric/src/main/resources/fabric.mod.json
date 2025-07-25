@@ -18,7 +18,7 @@
       "dev.lrockreal.lootlog.fabric.LootLogFabric"
     ],
     "client": [
-      "dev.lrockreal.lootlog.fabric.client.LootLogFabricClient"
+      "dev.lrockreal.lootlog.fabric.LootLogFabricClient"
     ]
   },
   "mixins": [

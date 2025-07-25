@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package dev.lrockreal.lootlog.fabric.client;
+package dev.lrockreal.lootlog.fabric;
 
 import net.fabricmc.api.ClientModInitializer;
 
