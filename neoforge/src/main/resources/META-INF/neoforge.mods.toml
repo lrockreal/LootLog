@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+issueTrackerURL = "https://github.com/lrockreal/LootLog/issues"
+license = "Apache 2.0"
+
+[[mods]]
+modId = "lootlog"
+version = "${version}"
+displayName = "Loot Log"
+authors = "HuCares_"
+description = '''
+Shared structure log for singleplayer and multiplayer Minecraft.
+'''
+logoFile = "icon.png"
+
+[[dependencies.lootlog]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.lootlog]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+
+[[mixins]]
+config = "lootlog.mixins.json"

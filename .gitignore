@@ -1,0 +1,6 @@
+.idea/*
+!.idea/icon.png
+**/.gradle/
+**/build/
+**/run/
+.architectury-transformer
