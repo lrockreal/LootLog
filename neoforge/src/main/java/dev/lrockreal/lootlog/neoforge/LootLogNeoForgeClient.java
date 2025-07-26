@@ -17,11 +17,13 @@
 package dev.lrockreal.lootlog.neoforge;
 
 import dev.lrockreal.lootlog.LootLog;
+import dev.lrockreal.lootlog.LootLogClient;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.Mod;
 
-@Mod(LootLog.ID)
-public final class LootLogNeoForge {
-    public LootLogNeoForge() {
-        LootLog.init();
+@Mod(value = LootLog.ID, dist = Dist.CLIENT)
+public class LootLogNeoForgeClient {
+    public LootLogNeoForgeClient() {
+        LootLogClient.initClient();
     }
 }

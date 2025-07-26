@@ -16,10 +16,18 @@
 
 package dev.lrockreal.lootlog;
 
+import net.minecraft.resources.ResourceLocation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public final class LootLog {
-    public static final String MOD_ID = "lootlog";
+    public static final String ID = "lootlog";
+    public static final Logger LOGGER = LoggerFactory.getLogger(ID);
+
+    public static ResourceLocation id(String path) {
+        return ResourceLocation.fromNamespaceAndPath(ID, path);
+    }
 
     public static void init() {
-        // Write common init code here.
     }
 }

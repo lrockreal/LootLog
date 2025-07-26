@@ -14,14 +14,13 @@
  * limitations under the License.
  */
 
-package dev.lrockreal.lootlog.neoforge;
+package dev.lrockreal.lootlog;
 
-import dev.lrockreal.lootlog.LootLog;
-import net.neoforged.fml.common.Mod;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 
-@Mod(LootLog.ID)
-public final class LootLogNeoForge {
-    public LootLogNeoForge() {
-        LootLog.init();
+@Environment(EnvType.CLIENT)
+public class LootLogClient {
+    public static void initClient() {
     }
 }
